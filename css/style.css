@@ -1,0 +1,70 @@
+/* <div id="music-box" class="">
+      <div class="img"></div>
+      <div class="music-inf"></div>
+      <div class="control-buttons"></div>
+      <div class="music-list">
+        <div class="dropdown-list"></div>
+        <div class="sound-control"></div>
+      </div>
+    </div> */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+body #music-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  border: solid 1px rgb(189, 186, 186);
+  border-radius: 5px;
+}
+body #music-box .music-inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #music-box .control-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  border-top: solid 1px rgb(189, 186, 186);
+  border-bottom: solid 1px rgb(189, 186, 186);
+}
+body #music-box .control-buttons .buttons {
+  display: flex;
+  gap: 20px;
+}
+body #music-box .control-buttons .buttons .btnPrev {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+body #music-box .control-buttons .buttons .btnPlay {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+body #music-box .control-buttons .buttons .btnNext {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+body #music-box .music-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
