@@ -29,13 +29,18 @@ class Music{
     set mp3File(value){
         this._mp3File = value;
     } */
+   getImage(){
+    return this.img;
+   }
+   
    getName(){
         return this.musicName + " - " + this.singerName;
    }
+   getMp3(){
+    return this.mp3File;
+   }
 }
 
-const musicList = [
-    new Music("img/1.jpeg", "Boşver", "Nilüfer", "mp3/1.mp3"),
-    new Music("img/2.jpeg", "Bu da Geçer mi Sevgilim", "Yalın", "mp3/2.mp3"),
-    new Music("img/3.jpeg", "Aramızda Uçurumlar", "Suat Suna", "mp3/3.mp3"),
-]
+
+
+

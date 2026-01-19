@@ -23,6 +23,11 @@ body #music-box {
   border: solid 1px rgb(189, 186, 186);
   border-radius: 5px;
 }
+body #music-box .img-div .music-img {
+  width: 550px;
+  border-bottom: 0;
+  border-radius: 5px;
+}
 body #music-box .music-inf {
   display: flex;
   flex-direction: column;
@@ -43,21 +48,23 @@ body #music-box .control-buttons {
 }
 body #music-box .control-buttons .buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 body #music-box .control-buttons .buttons .btnPrev {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
-body #music-box .control-buttons .buttons .btnPlay {
-  width: 30px;
-  height: 30px;
+body #music-box .control-buttons .buttons #btnPlay {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 body #music-box .control-buttons .buttons .btnNext {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 body #music-box .music-list {
@@ -65,6 +72,12 @@ body #music-box .music-list {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+body #music-box .music-list .volume-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

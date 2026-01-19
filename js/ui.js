@@ -18,7 +18,17 @@
       </div>
     </div> */
 class UI {
-    constructor (){
-    this.img = document.querySelector("img");
-}
+  constructor() {
+    this.music_img = document.querySelector(".music-img");
+    this.music_title = document.querySelector(".music-title");
+    this.singer = document.querySelector(".singer");
+    this.mp3 = document.querySelector("#player");
+    this.audio = document.getElementById("player");
+    this.btnPlay = document.getElementById("btnPlay");
+    this.timeEl = document.getElementById("time");
+    this.seek = document.getElementById("seek");
+    this.volume = document.getElementById("volume");
+    this.playIcon = `<i class="bi bi-play-fill"></i>`;
+    this.pauseIcon = `<i class="bi bi-pause-fill"></i>`;
+  }
 }

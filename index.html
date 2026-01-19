@@ -18,24 +18,52 @@
     <title>Music App</title>
   </head>
   <body>
-
     <div id="music-box" class="">
-      <div class="img"><img src="" alt=""></div>
-      <div class="music-inf ">
+      <div class="img-div"><img src="" alt="" class="music-img" /></div>
+      <div class="music-inf">
         <h5 class="music-title">title</h5>
         <h5 class="singer">singer</h5>
       </div>
       <div class="control-buttons">
-        <div class="minute-show">minute</div>
+        <div class="minute-show">
+          <audio id="player" src="" autoplay muted></audio>
+          <div>
+            <input id="seek" type="range" min="0" value="0" step="0.01" />
+            <span id="time">0:00 / 0:00</span>
+          </div>
+        </div>
         <div class="buttons">
-          <button class="btn btn-primary btnPrev"><i class="bi bi-arrow-left"></i></button>
-          <button class="btn btn-primary btnPlay"><i class="bi bi-play-fill"></i></button>
-          <button class="btn btn-primary btnNext"><i class="bi bi-arrow-right"></i></button>
+          <button class="btn btn-primary btnPrev">
+            <i class="bi bi-arrow-left"></i>
+          </button>
+          <button id="btnPlay" class="btn btn-primary">
+            <i class="bi bi-pause-fill"></i>
+          </button>
+          <button class="btn btn-primary btnNext">
+            <i class="bi bi-arrow-right"></i>
+          </button>
         </div>
       </div>
+
       <div class="music-list">
-        <div class="dropdown-list">dropdown</div>
-        <div class="sound-control">soundbar</div>
+        <button
+          class="btn btn-primary dropdown-toggle"
+          style="margin-left: 10px"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="volume-div">
+          <i class="bi bi-volume-up-fill" style="font-size: 25px"></i>
+          <input
+            id="volume"
+            type="range"
+            min="0"
+            max="1"
+            value="1"
+            step="0.01"
+          />
+        </div>
+        
       </div>
     </div>
 
