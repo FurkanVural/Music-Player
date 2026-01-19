@@ -46,13 +46,14 @@ body {
       width: 100%;
       border-top: solid 1px rgb(189, 186, 186);
       border-bottom: solid 1px rgb(189, 186, 186);
+      flex: 0;
       .minute-show{}
       .buttons {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
-        .btnPrev {
+        .btn-prev {
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -62,7 +63,7 @@ body {
             height: 40px;
             border-radius: 50%;
         }
-        .btnNext {
+        .btn-next {
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -83,6 +84,35 @@ body {
       .dropdown-list {
       }
       .sound-control {
+      }
+      .btn-collapse{
+        margin-left: 10px;
+      }
+    }
+  }
+  .collapse, .collapsing{
+    
+    .card{
+      padding: 0;
+      width: 550px;
+      .parent-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &.active{
+          background-color: rgb(100, 172, 172);
+        }
+        cursor: pointer;
+        padding: 7px 10px;
+        &:hover{
+          background-color: rgb(25, 145, 214);
+        }
+      .song-singer{
+
+      }
+      .song-time{
+
+      }
       }
     }
   }

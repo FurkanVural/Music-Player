@@ -1,11 +1,12 @@
-class Music{
-    constructor(img, musicName, singerName, mp3File){
-        this.img = img;
-        this.musicName = musicName;
-        this.singerName = singerName;
-        this.mp3File = mp3File;
-    }
-    /* get img(){
+class Music {
+  constructor(img, musicName, singerName, mp3File) {
+    this.img = img;
+    this.musicName = musicName;
+    this.singerName = singerName;
+    this.mp3File = mp3File;
+    this.duration = null;
+  }
+  /* get img(){
         return this._img;
     }
     set img(value){
@@ -29,18 +30,25 @@ class Music{
     set mp3File(value){
         this._mp3File = value;
     } */
-   getImage(){
+  getImage() {
     return this.img;
-   }
-   
-   getName(){
-        return this.musicName + " - " + this.singerName;
-   }
-   getMp3(){
+  }
+
+  getName() {
+    return this.musicName + " - " + this.singerName;
+  }
+  getMp3() {
     return this.mp3File;
-   }
+  }
+  getDuration(cb) {
+    const audio = new Audio(this.mp3File);
+    audio.addEventListener("loadedmetadata", () => {
+      const text = fmt(audio.duration);
+      this.duration = text;
+      cb(text);
+    });
+    audio.addEventListener("error", () => {
+      cb("--:--"); // mp3 yolu hatalıysa
+    });
+  }
 }
-
-
-
-

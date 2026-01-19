@@ -25,10 +25,15 @@ class UI {
     this.mp3 = document.querySelector("#player");
     this.audio = document.getElementById("player");
     this.btnPlay = document.getElementById("btnPlay");
+    this.btnNext = document.querySelector(".btn-next");
+    this.btnPrev = document.querySelector(".btn-prev");
     this.timeEl = document.getElementById("time");
     this.seek = document.getElementById("seek");
     this.volume = document.getElementById("volume");
     this.playIcon = `<i class="bi bi-play-fill"></i>`;
     this.pauseIcon = `<i class="bi bi-pause-fill"></i>`;
+    this.songList= document.querySelector(".collapsable-song-list");
+   
   }
 }
+

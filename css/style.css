@@ -45,6 +45,7 @@ body #music-box .control-buttons {
   width: 100%;
   border-top: solid 1px rgb(189, 186, 186);
   border-bottom: solid 1px rgb(189, 186, 186);
+  flex: 0;
 }
 body #music-box .control-buttons .buttons {
   display: flex;
@@ -52,7 +53,7 @@ body #music-box .control-buttons .buttons {
   align-items: center;
   gap: 20px;
 }
-body #music-box .control-buttons .buttons .btnPrev {
+body #music-box .control-buttons .buttons .btn-prev {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -62,7 +63,7 @@ body #music-box .control-buttons .buttons #btnPlay {
   height: 40px;
   border-radius: 50%;
 }
-body #music-box .control-buttons .buttons .btnNext {
+body #music-box .control-buttons .buttons .btn-next {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -78,6 +79,28 @@ body #music-box .music-list .volume-div {
   justify-content: center;
   align-items: center;
   margin: 10px 15px;
+}
+body #music-box .music-list .btn-collapse {
+  margin-left: 10px;
+}
+body .collapse .card, body .collapsing .card {
+  padding: 0;
+  width: 550px;
+}
+body .collapse .card .parent-div, body .collapsing .card .parent-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .collapse .card .parent-div.active, body .collapsing .card .parent-div.active {
+  background-color: rgb(100, 172, 172);
+}
+body .collapse .card .parent-div, body .collapsing .card .parent-div {
+  cursor: pointer;
+  padding: 7px 10px;
+}
+body .collapse .card .parent-div:hover, body .collapsing .card .parent-div:hover {
+  background-color: rgb(25, 145, 214);
 }
 
 /*# sourceMappingURL=style.css.map */
